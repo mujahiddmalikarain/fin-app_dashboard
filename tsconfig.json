@@ -6,6 +6,7 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
+    "sourceMap": true,  
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -29,7 +30,11 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.ts",
-    "scripts/seed.js"
+    "scripts/seed.js",
+    "app/**/*",    // Include your app directory here
+    "lib/**/*",    // If you use the lib directory for shared code
+    "pages/**/*"
+    
   ],
   "exclude": ["node_modules"]
 }
